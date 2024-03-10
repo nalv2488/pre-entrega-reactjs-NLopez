@@ -1,22 +1,23 @@
-import React from 'react'
+import React, {useContext} from 'react';
+import { CartContext } from '../../context/CartContext';
 import "./cartwidget.css"
 
 function CartWidget() {
+
+    const {cantidadCarrito} = useContext(CartContext)
+
     return (
 
         <>
-
-            {/* <img src="./img/cart.png" alt="" srcset="" /> */}
-
-
-            <i class="bi bi-cart"></i>
+            <i className="bi bi-cart"></i>
 
             <li className='li-header'>
-                0 items
+            {/* 0 items */}
+            <p>{cantidadCarrito() == 0 ? null : cantidadCarrito()}</p>
             </li>
         </>
 
     )
 }
 
-export default CartWidget
+export default CartWidget;

@@ -1,10 +1,13 @@
-import { useState } from 'react'
+import React,{useState,useEffect} from 'react';
 import NavBar from './components/NavBar/NavBar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import Cart from './components/Cart/Cart';
+import Checkout from './components/Checkout/Checkout';
+import CartProvider from './context/CartContext';
 
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import { getFirestore,doc,getDoc } from 'firebase/firestore';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { getFirestore, doc, getDoc } from 'firebase/firestore';
 
 function App() {
 
@@ -16,6 +19,8 @@ function App() {
 
       <BrowserRouter>
 
+<CartProvider>
+
         <NavBar />
 
         <Routes>
@@ -24,16 +29,22 @@ function App() {
 
           <Route path='/categoria/:categoryId' element={<ItemListContainer />} />
 
-          <Route path='/detalle/:id' element={<ItemDetailContainer />} />
+          <Route path='/item/:id' element={<ItemDetailContainer />} />
+
+          <Route path='/checkout' element={<Checkout />} />
+
+          <Route path='/cart' element={<Cart />} />
 
           <Route path='*' element={<Error />} />
 
         </Routes>
 
-      {/* <Footer /> */}
+        {/* { <Footer />} */}
 
-    </BrowserRouter >
-      
+      </CartProvider>
+
+      </BrowserRouter >
+
 
     </>
   )

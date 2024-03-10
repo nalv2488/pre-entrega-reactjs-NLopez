@@ -2,6 +2,7 @@ import React, {useState,useEffect} from 'react'
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { redirect, useParams } from 'react-router-dom';
 import { doc, getDoc, getFirestore } from 'firebase/firestore';
+// import { db } from '../../firebase/config';
 
 const ItemDetailContainer = () => {
 
@@ -11,19 +12,6 @@ const ItemDetailContainer = () => {
 
     useEffect(()=>{
         
-      // const fetchData = async () => {
-      //     try {
-      //         const response = await fetch("/productos.json");
-      //         const data = await response.json()
-      //         const product = data.find((p)=>p.id == id)
-      //         setProducto(product)
-      //     }catch(error){
-      //         console.log("Error en el fetch "+error)
-      //     }
-      // }
-
-      // fetchData()
-
       const db = getFirestore();
 
       const newdoc = doc(db,"productos",id)

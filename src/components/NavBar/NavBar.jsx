@@ -12,9 +12,10 @@ function NavBar() {
             <div className='div-navbar'>
                 <img className='logo-epl-main' src="/public/img/pl-main-logo.png" alt="ELP-logo" />
 
-                <Link to={'/'}>
-                    <a className='a-header'><strong>English Premier League</strong></a>
+                <Link to="/" className="a-header">
+                    <strong>English Premier League</strong>
                 </Link>
+
 
                 <div className='div-ul-header'>
                     <ul className='ul-header container'>
