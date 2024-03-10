@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    padding-top: 56px;
+}
+
+.div-navbar a {
+    top: 0;
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    z-index: 100;
+    position: sticky;
+    z-index: 100;
+}
+
+.div-navbar {
+    color: white;
+    display: flex;
+    background-color: #37003c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+}
+
+.div-ul-header {
+    color: white;
+    margin-right: 5px;
+    margin-bottom: 0px;
+}
+
+.ul-header {
+    text-align: initial;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 70px;
+    margin-bottom: 0px;
+}
+
+.li-header {
+    display: flex;
+    padding: 8px;
+    align-items: start;
+    margin: 0 10px;
+
+}
+
+.li-header a {
+    color: white;
+    text-decoration: none;
+}
+
+.h1-header {
+    font-size: 28px;
+    margin-left: 10px;
+    text-align: initial;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.li-header {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.logo-epl-main {
+    height: 60px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 3px;
+    width: 100hv;
+}

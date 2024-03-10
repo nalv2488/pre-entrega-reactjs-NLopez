@@ -1,0 +1,50 @@
+[
+        {
+            "id":1,
+            "nombre": "Man. United",
+            "cantidad": 1,
+            "precio": 25.99,
+            "img": "/public/img/camiseta_man_united.png",
+            "categoria": "Camisetas"
+        },
+        {
+            "id":2,
+            "nombre": "Liverpool",
+            "cantidad": 1,
+            "precio": 25.99,
+            "img": "/public/img/camiseta_liverpool.png",
+            "categoria": "Camisetas"
+        },
+        {
+            "id":3,
+            "nombre": "Man. City",
+            "cantidad": 1,
+            "precio": 25.99,
+            "img": "/public/img/camiseta_man_city.png",
+            "categoria": "Camisetas"
+        },
+        {
+            "id":4,
+            "nombre": "Man. United vs Liverpool",
+            "cantidad": 2,
+            "precio": 50.00,
+            "img": "/public/img/manu_liverpool.png",
+            "categoria": "Entradas"
+        },
+        {
+            "id":5,
+            "nombre": "Chelsea vs Arsenal",
+            "cantidad": 2,
+            "precio": 45.00,
+            "img": "/public/img/arsenal_chelsea.png",
+            "categoria": "Entradas"
+        },
+        {
+            "id":6,
+            "nombre": "Man. City vs Tottenham",
+            "cantidad": 2,
+            "precio": 45.00,
+            "img": "/public/img/tottenham_mancity.png",
+            "categoria": "Entradas"
+        }
+    ]

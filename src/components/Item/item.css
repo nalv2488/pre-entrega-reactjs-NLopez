@@ -1,0 +1,58 @@
+.img-catalogo-camiseta {
+    height: 300px;
+    width: auto;
+    object-fit: contain;
+}
+
+.img-catalogo-entrada {
+    height: 300px;
+    width: auto;
+    object-fit: contain;
+}
+
+.card-container {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    position: sticky;
+}
+
+.card-container-entrada {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-top: 100px;
+    width: 710px;
+}
+
+.card {
+    width: auto;
+    margin: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.card-img {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.card-body {
+    padding: 1rem;
+    align-items: center;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+
+}
+
+.card-text {
+    color: gray;
+    font-size: 18px;
+
+}

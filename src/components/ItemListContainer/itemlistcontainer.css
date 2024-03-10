@@ -1,0 +1,10 @@
+.h1-main{
+    margin-top: 20px;
+    font-size: 35px;   
+    color: #37003c;
+}
+
+.itemcontainer{
+    z-index: 1;
+    position: static;
+}
